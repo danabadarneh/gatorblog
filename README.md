@@ -1,23 +1,31 @@
 # Gator Blog CLI
 
-Gator Blog is a command-line interface (CLI) program that fetches RSS feeds and displays posts in your terminal. The main goal is to aggregate posts from multiple feeds and manage them locally using a database.
+**Gator Blog** is a command-line interface (CLI) program that allows you to fetch and display posts from multiple RSS feeds directly in your terminal. The main purpose of **Gator** is to aggregate posts from various sources and manage them locally using a database.
 
-## Features
+---
+
+## Features of Gator Blog
 
 - Add, remove, and list RSS feeds
-- Aggregate posts from feeds in a continuous loop
-- Print post titles to the console
+- Aggregate posts from all feeds in a continuous loop
+- Print post titles in the terminal
 - Track when each feed was last fetched
-- CLI commands for interacting with feeds
+- Easy-to-use CLI commands for interacting with feeds
 
-## Commands
+---
 
-### agg
+## Installation
 
-The `agg` command fetches all the RSS feeds, parses their posts, and prints the titles to the console. It runs in a continuous loop and fetches feeds one at a time, waiting a specified interval between requests to avoid overloading third-party servers.
-
-#### Usage
+1. Clone the repository:
 
 ```bash
-node dist/main.js agg 1m
+git clone https://github.com/danabadarneh/gatorblog.git
+cd gatorblog
+Install dependencies:
 
+npm install
+
+
+If using TypeScript, build the project:
+
+npx tsc
